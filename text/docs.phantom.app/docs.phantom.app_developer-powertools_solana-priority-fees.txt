@@ -1,0 +1,22 @@
+
+
+
+
+
+
+Solana Priority Fees - Phantom Developer Docs
+
+
+
+
+
+
+
+
+
+
+
+Phantom Developer DocsHomeDeveloper DiscordChangelogTwitterSearch⌃KLinks👻IntroductionIntroductionDeveloper Settings🟢SolanaGetting Started With SolanaDetecting the ProviderEstablishing a ConnectionSending a Legacy TransactionSending a Versioned TransactionSigning a MessageError Messages and Codes🔷Ethereum & PolygonGetting Started with Ethereum and PolygonDetecting the ProviderEstablishing a ConnectionSending a TransactionSigning a MessageProvider API Reference⛓Phantom DeeplinksPhantom DeeplinksProvider MethodsOther MethodsHandling SessionsSpecifying RedirectsEncryptionLimitations🤝Library IntegrationsDynamicPrivyRainbowKitwagmiWeb3-OnboardWeb3-React (V8)🛠Developer PowertoolsPhantom BlocklistSign-In-With (SIW) StandardsSolana Priority FeesSolana Versioned TransactionsWallet Standard✅Best PracticesDisplaying Apps within the Activity TabDisplaying Tokens on SolanaDisplaying Apps within Dialogs🙋ResourcesFAQDemo ApplicationsCommunity Guides & SDKsLogos & AssetsPowered By GitBookSolana Priority FeesIntroductionPhantom automatically calculates and applies Priority Fees to all Phantom-generated transactions and dApp-generated transactions that meet our requirements.How Transaction Fees Work on SolanaSolana transactions fees are calculated based on two main parts:• A statically set base fee per signature, and• The computational resources used during the transaction, measured in Compute Units (CU)Since each transaction requires different computational resources, they are allotted a maximum number of compute units, known as the Compute Budget. After the Compute Budget is exhausted, the runtime halts the transaction and returns an error, resulting in a failed transaction.The maximum budget for a transaction is 1.4 million CU, while the total blockspace limit is 48 million CU. Only a few computationally heavy TXs, like a mint or a swap, could fill the entire block, halting other TXs—Hence the need for Priority Fees.The fee priority of a transaction T can be defined as F(T), where F(T) is the "fee-per compute-unit", calculated by:(additional_fee+base_fee) / requested_compute_units(additional\_fee + base\_fee)\  /\  requested\_compute\_units(additional_fee+base_fee) / requested_compute_unitsThis means that the more compute units a transaction requests, the more additional fee it will have to pay to maintain the priority in the transaction queue. This prevents computationally heavy transactions from being easily spammed or from filling blocks.Priority Fees CalculationPriority fees are calculated as,priority_fees = compute_budget ∗ compute_unit_pricepriority\_fees\ =\ compute\_budget\ *\ compute\_unit\_pricepriority_fees = compute_budget ∗ compute_unit_pricewhere,compute_budget = # of instructions ∗ compute_unit_limitcompute\_budget\ =\ \#\ of\ instructions\ *\ compute\_unit\_limitcompute_budget = # of instructions ∗ compute_unit_limitHow Phantom Applies Priority Fees to dApp TransactionsAlthough dApps can set their own priority fees on transactions they generate, we highly discourage doing so as it often surfaces unnecessary complexity to end-users. Instead, we recommend that dApp developers let Phantom apply priority fees on the user's behalf.Phantom will calculate and apply Priority Fees to all dApp-generated transactions, provided:• The transaction(s) do not already have signature(s) present• The transaction(s) do not have existing priority fee instructions (computeUnitBudget or computeUnitLimit)• After enhancing transaction(s) with Priority Fees, the size of each transaction will still be less than the byte size limit (1232 bytes)If all of the above conditions are met, Phantom will automatically calculate and apply priority fees at the time of signing. This pattern applies to all Phantom provider methods (signAndSendTransaction, signTransaction , signAllTransactions) across all environments (extension, mobile in-app browser, deeplinks, mobile wallet adapter).Further ReadingFee Transaction Priority | Solana DocsSolana Cookbook | Sending TransactionssolanacookbookRuntime | Solana DocsTransaction Fees | Solana DocsDeveloper Powertools - PreviousSign-In-With (SIW) StandardsNext - Developer PowertoolsSolana Versioned TransactionsLast modified 2mo agoCopy linkOn this pageIntroductionHow Transaction Fees Work on SolanaPriority Fees CalculationHow Phantom Applies Priority Fees to dApp TransactionsFurther Reading
+
+
+

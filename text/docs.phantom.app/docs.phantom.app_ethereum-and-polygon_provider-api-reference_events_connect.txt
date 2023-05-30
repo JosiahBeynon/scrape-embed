@@ -1,0 +1,22 @@
+
+
+
+
+
+
+Connect - Phantom Developer Docs
+
+
+
+
+
+
+
+
+
+
+
+Phantom Developer DocsHomeDeveloper DiscordChangelogTwitterSearch⌃KLinks👻IntroductionIntroductionDeveloper Settings🟢SolanaGetting Started With SolanaDetecting the ProviderEstablishing a ConnectionSending a Legacy TransactionSending a Versioned TransactionSigning a MessageError Messages and Codes🔷Ethereum & PolygonGetting Started with Ethereum and PolygonDetecting the ProviderEstablishing a ConnectionSending a TransactionSigning a MessageProvider API ReferencePropertiesEventsConnectAccounts ChangedDisconnectChain ChangedMethodsError Messages & Codes⛓Phantom DeeplinksPhantom DeeplinksProvider MethodsOther MethodsHandling SessionsSpecifying RedirectsEncryptionLimitations🤝Library IntegrationsDynamicPrivyRainbowKitwagmiWeb3-OnboardWeb3-React (V8)🛠Developer PowertoolsPhantom BlocklistSign-In-With (SIW) StandardsSolana Priority FeesSolana Versioned TransactionsWallet Standard✅Best PracticesDisplaying Apps within the Activity TabDisplaying Tokens on SolanaDisplaying Apps within Dialogs🙋ResourcesFAQDemo ApplicationsCommunity Guides & SDKsLogos & AssetsPowered By GitBookConnectEvent emitted upon connecting to a dapp.interface connectionInfo {  chainId: string;}​window.ethereum.on('connect', (connectionInfo: connectionInfo) => { console.log(connectionInfo.chainId); // "0x1" On Ethereum});You can see an example of hooking into this event in our sandbox.PreviousEventsNextAccounts ChangedLast modified 3mo agoCopy link
+
+
+

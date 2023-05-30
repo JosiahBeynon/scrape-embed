@@ -1,0 +1,21 @@
+
+
+
+
+
+
+Provider Methods - Phantom Developer Docs
+
+
+
+
+
+
+
+
+
+
+Phantom Developer DocsHomeDeveloper DiscordChangelogTwitterSearch⌃KLinks👻IntroductionIntroductionDeveloper Settings🟢SolanaGetting Started With SolanaDetecting the ProviderEstablishing a ConnectionSending a Legacy TransactionSending a Versioned TransactionSigning a MessageError Messages and Codes🔷Ethereum & PolygonGetting Started with Ethereum and PolygonDetecting the ProviderEstablishing a ConnectionSending a TransactionSigning a MessageProvider API Reference⛓Phantom DeeplinksPhantom DeeplinksProvider MethodsConnectDisconnectSignAndSendTransactionSignAllTransactionsSignTransactionSignMessageOther MethodsHandling SessionsSpecifying RedirectsEncryptionLimitations🤝Library IntegrationsDynamicPrivyRainbowKitwagmiWeb3-OnboardWeb3-React (V8)🛠Developer PowertoolsPhantom BlocklistSign-In-With (SIW) StandardsSolana Priority FeesSolana Versioned TransactionsWallet Standard✅Best PracticesDisplaying Apps within the Activity TabDisplaying Tokens on SolanaDisplaying Apps within Dialogs🙋ResourcesFAQDemo ApplicationsCommunity Guides & SDKsLogos & AssetsPowered By GitBookProvider MethodsAll provider methods follow a protocol format of:https://phantom.app/ul/<version>/<method>The following provider methods are accessible via deeplinks:ConnectDisconnectSignAndSendTransactionSignAllTransactionsSignTransactionSignMessagePhantom Deeplinks - PreviousPhantom DeeplinksNextConnectLast modified 1yr agoCopy link
+
+
+

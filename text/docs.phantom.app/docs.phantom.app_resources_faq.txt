@@ -1,0 +1,21 @@
+
+
+
+
+
+
+FAQ - Phantom Developer Docs
+
+
+
+
+
+
+
+
+
+
+Phantom Developer DocsHomeDeveloper DiscordChangelogTwitterSearch⌃KLinks👻IntroductionIntroductionDeveloper Settings🟢SolanaGetting Started With SolanaDetecting the ProviderEstablishing a ConnectionSending a Legacy TransactionSending a Versioned TransactionSigning a MessageError Messages and Codes🔷Ethereum & PolygonGetting Started with Ethereum and PolygonDetecting the ProviderEstablishing a ConnectionSending a TransactionSigning a MessageProvider API Reference⛓Phantom DeeplinksPhantom DeeplinksProvider MethodsOther MethodsHandling SessionsSpecifying RedirectsEncryptionLimitations🤝Library IntegrationsDynamicPrivyRainbowKitwagmiWeb3-OnboardWeb3-React (V8)🛠Developer PowertoolsPhantom BlocklistSign-In-With (SIW) StandardsSolana Priority FeesSolana Versioned TransactionsWallet Standard✅Best PracticesDisplaying Apps within the Activity TabDisplaying Tokens on SolanaDisplaying Apps within Dialogs🙋ResourcesFAQDemo ApplicationsCommunity Guides & SDKsLogos & AssetsPowered By GitBookFAQWhy can't I access Phantom on my website?Phantom will only inject its provider into websites that begin with https://, or if the host is localhost or 127.0.0.1. If your website only uses http://, Phantom will not inject its provider and you will not be able to access the methods found at window.phantom. Encrypting your web traffic and upgrading to https:// will restore functionality.Phantom will also not inject its provider into any iframe.Why isn't my token displaying properly?Phantom supports the Token Metadata Standard established by Metaplex. When displaying tokens, Phantom will first categorize them according to their TokenStandard. If a token is considered Fungible, Phantom will display it on the Home tab. Otherwise, Phantom will display it as a Collectible. For more information, please review:Displaying Tokens on SolanaWhat types of NFTs are supported?Phantom supports a range of NFT media types including images, audio files, video files, and 3D models. At this time, Phantom does not support HTML files. For a full list of the types of NFTs that Phantom will display, please reference:Supported Media TypesAre hardware wallets supported?Yes, Phantom currently supports Ledger and requires no special treatment on the application side.How does Phantom import wallet addresses?When importing addresses from an existing seed phrase, Phantom will scan for 20 addresses in each of our three supported derivation paths (bip44change, bip44, and a deprecated path), for a total of 60 addresses. For the convenience of the user, Phantom will filter this list of addresses down to wallets that have ever had signatures (i.e. have ever been used). Phantom will then sort this filtered list based on how many signatures each wallet has had plus the amount of lamports it currently owns.  Why does Phantom prepend an additional instruction on standard SPL token transfers?When transferring SPL tokens, Phantom will first double check that the owner of the receiving token account is the address you expect to send to. To do this, Phantom calls a custom deployment of the Serum Assert Owner program. The program address of this deployment is DeJBGdMFa1uynnnKiwrVioatTuHmNLpyFKnmB5kaFdzQ and is available on Solana's Devnet, Testnet, and Mainnet.Best Practices - PreviousDisplaying Apps within DialogsNext - ResourcesDemo ApplicationsLast modified 2mo agoCopy linkOn this pageWhy can't I access Phantom on my website?Why isn't my token displaying properly?What types of NFTs are supported?Are hardware wallets supported?How does Phantom import wallet addresses?Why does Phantom prepend an additional instruction on standard SPL token transfers?
+
+
+

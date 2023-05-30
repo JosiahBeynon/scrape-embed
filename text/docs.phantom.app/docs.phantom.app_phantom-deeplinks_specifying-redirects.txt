@@ -1,0 +1,21 @@
+
+
+
+
+
+
+Specifying Redirects - Phantom Developer Docs
+
+
+
+
+
+
+
+
+
+
+Phantom Developer DocsHomeDeveloper DiscordChangelogTwitterSearch⌃KLinks👻IntroductionIntroductionDeveloper Settings🟢SolanaGetting Started With SolanaDetecting the ProviderEstablishing a ConnectionSending a Legacy TransactionSending a Versioned TransactionSigning a MessageError Messages and Codes🔷Ethereum & PolygonGetting Started with Ethereum and PolygonDetecting the ProviderEstablishing a ConnectionSending a TransactionSigning a MessageProvider API Reference⛓Phantom DeeplinksPhantom DeeplinksProvider MethodsOther MethodsHandling SessionsSpecifying RedirectsEncryptionLimitations🤝Library IntegrationsDynamicPrivyRainbowKitwagmiWeb3-OnboardWeb3-React (V8)🛠Developer PowertoolsPhantom BlocklistSign-In-With (SIW) StandardsSolana Priority FeesSolana Versioned TransactionsWallet Standard✅Best PracticesDisplaying Apps within the Activity TabDisplaying Tokens on SolanaDisplaying Apps within Dialogs🙋ResourcesFAQDemo ApplicationsCommunity Guides & SDKsLogos & AssetsPowered By GitBookSpecifying RedirectsAll Methods support a redirect_link= param that lets Phantom know how to get back to the original app. The URI specified by this param should be URL encoded. The following is an example for a mydapp://onPhantomConnected redirect URI:redirect_link%3Dmydapp%3A%2F%2FonPhantomConnectedIf the deeplink request to Phantom comes with a response, Phantom will append the results as query parameters in the redirect_link= upon redirecting.redirect_link=mydapp://onPhantomConnected?data=...Phantom Deeplinks - PreviousHandling SessionsNext - Phantom DeeplinksEncryptionLast modified 1yr agoCopy link
+
+
+

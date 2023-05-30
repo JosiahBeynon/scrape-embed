@@ -1,0 +1,24 @@
+
+
+
+
+
+
+Signing a Message - Phantom Developer Docs
+
+
+
+
+
+
+
+
+
+
+
+
+
+Phantom Developer DocsHomeDeveloper DiscordChangelogTwitterSearch⌃KLinks👻IntroductionIntroductionDeveloper Settings🟢SolanaGetting Started With SolanaDetecting the ProviderEstablishing a ConnectionSending a Legacy TransactionSending a Versioned TransactionSigning a MessageError Messages and Codes🔷Ethereum & PolygonGetting Started with Ethereum and PolygonDetecting the ProviderEstablishing a ConnectionSending a TransactionSigning a MessageProvider API Reference⛓Phantom DeeplinksPhantom DeeplinksProvider MethodsOther MethodsHandling SessionsSpecifying RedirectsEncryptionLimitations🤝Library IntegrationsDynamicPrivyRainbowKitwagmiWeb3-OnboardWeb3-React (V8)🛠Developer PowertoolsPhantom BlocklistSign-In-With (SIW) StandardsSolana Priority FeesSolana Versioned TransactionsWallet Standard✅Best PracticesDisplaying Apps within the Activity TabDisplaying Tokens on SolanaDisplaying Apps within Dialogs🙋ResourcesFAQDemo ApplicationsCommunity Guides & SDKsLogos & AssetsPowered By GitBookSigning a MessageWhen a web application is connected to Phantom, it can also request that the user signs a given message. Applications are free to write their own messages which will be displayed to users from within Phantom's signature prompt. Message signatures do not involve network fees and are a convenient way for apps to verify ownership of an address.In order to send a message for the user to sign, a web application must: 1.Provide a hex or UTF-8 encoded string as a Uint8Array.2.Request that the encoded message is signed via the user's Phantom wallet.The handleSignMessage section of our developer sandbox provides an example of signing a message.For more information on how to verify the signature of a message, please refer to tweetnacl-js.signMessage()request()const provider = getProvider(); // see "Detecting the Provider"const message = `To avoid digital dognappers, sign below to authenticate with CryptoCorgis`;const encodedMessage = new TextEncoder().encode(message);const signedMessage = await provider.signMessage(encodedMessage, "utf8");const provider = getProvider(); // see "Detecting the Provider"const message = `To avoid digital dognappers, sign below to authenticate with CryptoCorgis`;const encodedMessage = new TextEncoder().encode(message);const signedMessage = await provider.request({ method: "signMessage", params: { message: encodedMessage, display: "hex", },});Support for "Sign In With" StandardsApplications that rely on signMessage for authenticating users can choose to opt-in to one of the various Sign In With (SIW) standards. You can read more about them here.Solana - PreviousSending a Versioned TransactionNext - SolanaError Messages and CodesLast modified 2mo agoCopy link
+
+
+

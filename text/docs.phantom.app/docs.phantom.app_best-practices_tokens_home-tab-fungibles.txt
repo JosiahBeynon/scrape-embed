@@ -1,0 +1,21 @@
+
+
+
+
+
+
+Fungibles - Phantom Developer Docs
+
+
+
+
+
+
+
+
+
+
+Phantom Developer DocsHomeDeveloper DiscordChangelogTwitterSearch⌃KLinks👻IntroductionIntroductionDeveloper Settings🟢SolanaGetting Started With SolanaDetecting the ProviderEstablishing a ConnectionSending a Legacy TransactionSending a Versioned TransactionSigning a MessageError Messages and Codes🔷Ethereum & PolygonGetting Started with Ethereum and PolygonDetecting the ProviderEstablishing a ConnectionSending a TransactionSigning a MessageProvider API Reference⛓Phantom DeeplinksPhantom DeeplinksProvider MethodsOther MethodsHandling SessionsSpecifying RedirectsEncryptionLimitations🤝Library IntegrationsDynamicPrivyRainbowKitwagmiWeb3-OnboardWeb3-React (V8)🛠Developer PowertoolsPhantom BlocklistSign-In-With (SIW) StandardsSolana Priority FeesSolana Versioned TransactionsWallet Standard✅Best PracticesDisplaying Apps within the Activity TabDisplaying Tokens on SolanaFungiblesNFTs & Semi-FungiblesSupported Media TypesDisplaying Apps within Dialogs🙋ResourcesFAQDemo ApplicationsCommunity Guides & SDKsLogos & AssetsPowered By GitBookFungiblesDisplaying Fungible TokensPhantom prioritizes on-chain metadata that follows the Token Metadata Standard. For Fungible tokens specifically, Phantom will show the following fields:FieldDescriptionnameThe name of the token. (i.e. “USD Coin”)symbolThe symbol of the token. (i.e. ”USDC”)imageA URI pointing to the token's logo.If a Fungible token has name and symbol fields present on both its on-chain Metadata Account and off-chain JSON file (linked via the on-chain uri field), Phantom will prioritize the on-chain fields.If a Fungible token does not have an on-chain Metadata Account, Phantom will fallback to displaying data from the Solana Labs Token List. This list is considered deprecated and should not be used to host new tokens. When reading from the token list, Phantom will display the following fields:FieldDescriptionnameThe name of the token. (i.e. “USD Coin”)symbolThe symbol of the token. (i.e. ”USDC”)logoURIA URI pointing to the token's logo.extensions.coingeckoIDThe token ID as defined by the Coingecko API. Phantom uses this to fetch the price of the token.Best Practices - PreviousDisplaying Tokens on SolanaNextNFTs & Semi-FungiblesLast modified 2mo agoCopy link
+
+
+

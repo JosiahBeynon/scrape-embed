@@ -1,0 +1,21 @@
+
+
+
+
+
+
+Developer Settings - Phantom Developer Docs
+
+
+
+
+
+
+
+
+
+
+Phantom Developer DocsHomeDeveloper DiscordChangelogTwitterSearch⌃KLinks👻IntroductionIntroductionDeveloper Settings🟢SolanaGetting Started With SolanaDetecting the ProviderEstablishing a ConnectionSending a Legacy TransactionSending a Versioned TransactionSigning a MessageError Messages and Codes🔷Ethereum & PolygonGetting Started with Ethereum and PolygonDetecting the ProviderEstablishing a ConnectionSending a TransactionSigning a MessageProvider API Reference⛓Phantom DeeplinksPhantom DeeplinksProvider MethodsOther MethodsHandling SessionsSpecifying RedirectsEncryptionLimitations🤝Library IntegrationsDynamicPrivyRainbowKitwagmiWeb3-OnboardWeb3-React (V8)🛠Developer PowertoolsPhantom BlocklistSign-In-With (SIW) StandardsSolana Priority FeesSolana Versioned TransactionsWallet Standard✅Best PracticesDisplaying Apps within the Activity TabDisplaying Tokens on SolanaDisplaying Apps within Dialogs🙋ResourcesFAQDemo ApplicationsCommunity Guides & SDKsLogos & AssetsPowered By GitBookDeveloper SettingsDevelopers can can configure the following settings on Phantom's extension or mobile apps:​Preferred Explorer​​Testnet Mode​Preferred ExplorerDevelopers can choose the default block explorers for all the three chains that are currently supported by Phantom: Solana, Ethereum and Polygon. The following options can be chosen:Solana​Solana Beach​​Solscan (Default)​Solana Explorer​​Solana FM​Ethereum​Etherscan​Polygon​Polygonscan​Testnet ModeDevelopers can configure the following testnets in testnet mode:SolanaSolana TestnetSolana DevnetEthereum and PolygonEthereum GoerliPolygon MumbaiIntroduction - PreviousIntroductionNext - SolanaGetting Started With SolanaLast modified 1mo agoCopy linkOn this pagePreferred ExplorerTestnet Mode
+
+
+

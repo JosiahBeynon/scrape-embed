@@ -1,0 +1,21 @@
+
+
+
+
+
+
+Browse - Phantom Developer Docs
+
+
+
+
+
+
+
+
+
+
+Phantom Developer DocsHomeDeveloper DiscordChangelogTwitterSearch⌃KLinks👻IntroductionIntroductionDeveloper Settings🟢SolanaGetting Started With SolanaDetecting the ProviderEstablishing a ConnectionSending a Legacy TransactionSending a Versioned TransactionSigning a MessageError Messages and Codes🔷Ethereum & PolygonGetting Started with Ethereum and PolygonDetecting the ProviderEstablishing a ConnectionSending a TransactionSigning a MessageProvider API Reference⛓Phantom DeeplinksPhantom DeeplinksProvider MethodsOther MethodsBrowseHandling SessionsSpecifying RedirectsEncryptionLimitations🤝Library IntegrationsDynamicPrivyRainbowKitwagmiWeb3-OnboardWeb3-React (V8)🛠Developer PowertoolsPhantom BlocklistSign-In-With (SIW) StandardsSolana Priority FeesSolana Versioned TransactionsWallet Standard✅Best PracticesDisplaying Apps within the Activity TabDisplaying Tokens on SolanaDisplaying Apps within Dialogs🙋ResourcesFAQDemo ApplicationsCommunity Guides & SDKsLogos & AssetsPowered By GitBookBrowseDeeplinks provide a convenient way for users to open web apps within Phantom. Using their phone’s camera, users can scan a QR code to open a page directly within Phantom’s in-app browser. If a web app detects that a user is on mobile, it can also prompt the user to open a specific page within Phantom's in-app browser.The browse deeplink can be used before a Connect event takes places, as it does not require a session param. Please review Extension & Mobile Browser for more information on how apps can interact with Phantom from within the in-app browser.browse deeplinks are not intended to be pasted into mobile web browsers. These deeplinks must either be handled by an app or clicked on by an end user.URL Structurehttps://phantom.app/ul/browse/<url>?ref=<ref>Parametersurl (required): The URL that should open within Phantom's in-app browser, URL-encoded.ref (required): The URL of the requesting app, URL-encodedThe following is an example request to open an NFT listed on Magic Eden:https://phantom.app/ul/browse/https%3A%2F%2Fmagiceden.io%2Fitem-details%2FED8Psf2Zk2HyVGAimSQpFHVDFRGDAkPjQhkfAqbN5h7d?ref=https%3A%2F%2Fmagiceden.ioResult: browse deeplink to NFT listed on Magic Eden​Phantom Deeplinks - PreviousOther MethodsNext - Phantom DeeplinksHandling SessionsLast modified 8mo agoCopy linkOn this pageURL StructureParameters
+
+
+

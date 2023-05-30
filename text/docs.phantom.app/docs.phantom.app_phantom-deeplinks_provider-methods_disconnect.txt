@@ -1,0 +1,22 @@
+
+
+
+
+
+
+Disconnect - Phantom Developer Docs
+
+
+
+
+
+
+
+
+
+
+
+Phantom Developer DocsHomeDeveloper DiscordChangelogTwitterSearch⌃KLinks👻IntroductionIntroductionDeveloper Settings🟢SolanaGetting Started With SolanaDetecting the ProviderEstablishing a ConnectionSending a Legacy TransactionSending a Versioned TransactionSigning a MessageError Messages and Codes🔷Ethereum & PolygonGetting Started with Ethereum and PolygonDetecting the ProviderEstablishing a ConnectionSending a TransactionSigning a MessageProvider API Reference⛓Phantom DeeplinksPhantom DeeplinksProvider MethodsConnectDisconnectSignAndSendTransactionSignAllTransactionsSignTransactionSignMessageOther MethodsHandling SessionsSpecifying RedirectsEncryptionLimitations🤝Library IntegrationsDynamicPrivyRainbowKitwagmiWeb3-OnboardWeb3-React (V8)🛠Developer PowertoolsPhantom BlocklistSign-In-With (SIW) StandardsSolana Priority FeesSolana Versioned TransactionsWallet Standard✅Best PracticesDisplaying Apps within the Activity TabDisplaying Tokens on SolanaDisplaying Apps within Dialogs🙋ResourcesFAQDemo ApplicationsCommunity Guides & SDKsLogos & AssetsPowered By GitBookDisconnectAfter an initial Connect event has taken place, an app may disconnect from Phantom at anytime. Once disconnected, Phantom will reject all signature requests until another connection is established.Base URLhttps://phantom.app/ul/v1/disconnectQuery String Parametersdapp_encryption_public_key (required): The original encryption public key used from the app side for an existing Connect session.nonce (required): A nonce used for encrypting the request, encoded in base58.redirect_link (required): The URI where Phantom should redirect the user upon completion. Please review Specifying Redirects for more details. URL-encoded.payload (required): An encrypted JSON string with the following fields:{ "session": "...", // token received from the connect method}session (required): The session token received from the Connect method. Please see Handling Sessions for more details.Returns​✅ ApproveNo query params returned.​❌RejectAn errorCode and errorMessage as query parameters. Please refer to Errors for a full list of possible error codes.{  "errorCode": "...",  "errorMessage": "..."}ExamplePlease refer to the disconnect method implemented in our React Native demo application.PreviousConnectNextSignAndSendTransactionLast modified 11mo agoCopy linkOn this pageBase URLQuery String ParametersReturnsExample
+
+
+

@@ -1,0 +1,26 @@
+
+
+
+
+
+
+Privy - Phantom Developer Docs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Phantom Developer DocsHomeDeveloper DiscordChangelogTwitterSearch⌃KLinks👻IntroductionIntroductionDeveloper Settings🟢SolanaGetting Started With SolanaDetecting the ProviderEstablishing a ConnectionSending a Legacy TransactionSending a Versioned TransactionSigning a MessageError Messages and Codes🔷Ethereum & PolygonGetting Started with Ethereum and PolygonDetecting the ProviderEstablishing a ConnectionSending a TransactionSigning a MessageProvider API Reference⛓Phantom DeeplinksPhantom DeeplinksProvider MethodsOther MethodsHandling SessionsSpecifying RedirectsEncryptionLimitations🤝Library IntegrationsDynamicPrivyRainbowKitwagmiWeb3-OnboardWeb3-React (V8)🛠Developer PowertoolsPhantom BlocklistSign-In-With (SIW) StandardsSolana Priority FeesSolana Versioned TransactionsWallet Standard✅Best PracticesDisplaying Apps within the Activity TabDisplaying Tokens on SolanaDisplaying Apps within Dialogs🙋ResourcesFAQDemo ApplicationsCommunity Guides & SDKsLogos & AssetsPowered By GitBookPrivy​Privy is a simple toolkit for progressive authentication in web3. With a single library, you can easily onboard both expert users and newcomers alike, through Privy's powerful wallet connectors and delightful embedded wallets.Privy makes it easy to integrate every major wallet into your app without having to wrangle the connectors individually. You can check out Privy in action here.Privy comes pre-packaged with Phantom so you can support your Phantom users right out of the box. Here’s how.PrerequisitesThe Privy React Auth SDK allows you to authenticate your users with Privy in your React app in minutes. You can follow the standard guide here.Building a new app? Check out these starter templates for integrating Privy into:a NextJS project (GitHub, CodeSandbox)a Create React App project (GitHub, CodeSandbox)1. Get a Privy accountRequest access to Privy and get keys in minutes. Retrieve your Privy app ID from the developer console at console.privy.io​2. Install the Privy npm packageInstall the Privy React Auth SDK using npm:npm install @privy-io/react-auth3. Configure PrivyOnce you have your app ID, in your React project, wrap your components with a PrivyProvider. The PrivyProvider should wrap any component that will use the Privy SDK.If you're starting from scratch, we recommend using one of these templates to integrate Privy:a NextJS project (GitHub, CodeSandbox)a Create React App project (GitHub, CodeSandbox) For example, in a NextJS or Create React App project, you may wrap your components like so:NextJSCreate React Appimport type {AppProps} from 'next/app';import Head from 'next/head';import {PrivyProvider} from '@privy-io/react-auth';​// This method will be passed to the PrivyProvider as a callback// that runs after successful login.const handleLogin = (user) => { console.log(`User ${user.id} logged in!`)}​function MyApp({Component, pageProps}: AppProps) { return ( <> <Head> {/* Edit your HTML header */} </Head> <PrivyProvider appId={process.env.NEXT_PUBLIC_PRIVY_APP_ID} onSuccess={handleLogin} > <Component {...pageProps} /> </PrivyProvider> </> );}import React from 'react';import ReactDOM from 'react-dom/client';import './index.css';import App from './App';import reportWebVitals from './reportWebVitals';import {PrivyProvider} from '@privy-io/react-auth';​const root = ReactDOM.createRoot(document.getElementById('root'));​// This method will be passed to the PrivyProvider as a callback// that runs after successful login.const handleLogin = (user) => { console.log(`User ${user.id} logged in!`)}​root.render( <React.StrictMode> <PrivyProvider appId={process.env.REACT_APP_PRIVY_APP_ID} onSuccess={handleLogin} > <App /> </PrivyProvider> </React.StrictMode>);​// See https://docs.privy.io/guide/troubleshooting/webpack for how to handle// common build issues with web3 projects bootstrapped with Create React AppThe PrivyProvider takes the following properties:your appIdan optional onSuccess callback which will execute once a user successfully logs inan optional config property to customize the look and feel of the Privy modal to match your app4. Just usePrivy! 🎉You can now use the Privy SDK throughout your app via the usePrivy hook with Phantom working right out of the box.Check it out liveSee Privy run live in a CodeSandbox environment and check out the starter repo for more reference.Next Steps​Customize Privy to match your brand and explore how your users are connecting to your app.From here, you can easily use Privy to:​Log your users in.​Prompt users to link additional accounts, as part of progressive onboarding.​Interface with users' crypto wallets.Manage your user base with simple allowlists and powerful analytics.​Create Ethereum wallets embedded in your app.
+Library Integrations - PreviousDynamicNext - Library IntegrationsRainbowKitLast modified 25d agoCopy link
+
+
+

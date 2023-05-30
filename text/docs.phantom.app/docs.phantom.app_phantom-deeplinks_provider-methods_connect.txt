@@ -1,0 +1,22 @@
+
+
+
+
+
+
+Connect - Phantom Developer Docs
+
+
+
+
+
+
+
+
+
+
+
+Phantom Developer DocsHomeDeveloper DiscordChangelogTwitterSearch⌃KLinks👻IntroductionIntroductionDeveloper Settings🟢SolanaGetting Started With SolanaDetecting the ProviderEstablishing a ConnectionSending a Legacy TransactionSending a Versioned TransactionSigning a MessageError Messages and Codes🔷Ethereum & PolygonGetting Started with Ethereum and PolygonDetecting the ProviderEstablishing a ConnectionSending a TransactionSigning a MessageProvider API Reference⛓Phantom DeeplinksPhantom DeeplinksProvider MethodsConnectDisconnectSignAndSendTransactionSignAllTransactionsSignTransactionSignMessageOther MethodsHandling SessionsSpecifying RedirectsEncryptionLimitations🤝Library IntegrationsDynamicPrivyRainbowKitwagmiWeb3-OnboardWeb3-React (V8)🛠Developer PowertoolsPhantom BlocklistSign-In-With (SIW) StandardsSolana Priority FeesSolana Versioned TransactionsWallet Standard✅Best PracticesDisplaying Apps within the Activity TabDisplaying Tokens on SolanaDisplaying Apps within Dialogs🙋ResourcesFAQDemo ApplicationsCommunity Guides & SDKsLogos & AssetsPowered By GitBookConnectIn order to start interacting with Phantom, an app must first establish a connection. This connection request will prompt the user for permission to share their public key, indicating that they are willing to interact further.Once a user connects to Phantom, Phantom will return a session param that should be used on all subsequent methods. For more information on sessions, please review Handling Sessions.Base URLhttps://phantom.app/ul/v1/connectQuery String Parametersapp_url (required): A url used to fetch app metadata (i.e. title, icon) using the same properties found in Displaying Your App. URL-encoded.dapp_encryption_public_key (required): A public key used for end-to-end encryption. This will be used to generate a shared secret. For more information on how Phantom handles shared secrets, please review Encryption. redirect_link (required): The URI where Phantom should redirect the user upon connection. Please review Specifying Redirects for more details. URL-encoded.cluster (optional): The network that should be used for subsequent interactions. Can be either: mainnet-beta, testnet, or devnet. Defaults to mainnet-beta.Returns​✅ Approvephantom_encryption_public_key: An encryption public key used by Phantom for the construction of a shared secret between the connecting app and Phantom, encoded in base58.nonce: A nonce used for encrypting the response, encoded in base58.data: An encrypted JSON string. Refer to Encryption to learn how apps can decrypt data using a shared secret. Encrypted bytes are encoded in base58.// content of decrypted `data`-parameter{ // base58 encoding of user public key "public_key": "BSFtCudCd4pR4LSFqWPjbtXPKSNVbGkc35gRNdnqjMCU",​ // session token for subsequent signatures and messages // dapps should send this with any other deeplinks after connect "session": "..."}public_key: The public key of the user, represented as a base58-encoded string.session: A string encoded in base58. This should be treated as opaque by the connecting app, as it only needs to be passed alongside other parameters. Sessions do not expire. For more information on sessions, please review Handling Sessions.​❌RejectAn errorCode and errorMessage as query parameters. Please refer to Errors for a full list of possible error codes.{  "errorCode": "...",  "errorMessage": "..."}ExamplePlease refer to the connect method implemented in our React Native demo application.Phantom Deeplinks - PreviousProvider MethodsNextDisconnectLast modified 11mo agoCopy linkOn this pageBase URLQuery String ParametersReturnsExample
+
+
+

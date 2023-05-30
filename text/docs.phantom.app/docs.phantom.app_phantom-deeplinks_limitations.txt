@@ -1,0 +1,21 @@
+
+
+
+
+
+
+Limitations - Phantom Developer Docs
+
+
+
+
+
+
+
+
+
+
+Phantom Developer DocsHomeDeveloper DiscordChangelogTwitterSearch⌃KLinks👻IntroductionIntroductionDeveloper Settings🟢SolanaGetting Started With SolanaDetecting the ProviderEstablishing a ConnectionSending a Legacy TransactionSending a Versioned TransactionSigning a MessageError Messages and Codes🔷Ethereum & PolygonGetting Started with Ethereum and PolygonDetecting the ProviderEstablishing a ConnectionSending a TransactionSigning a MessageProvider API Reference⛓Phantom DeeplinksPhantom DeeplinksProvider MethodsOther MethodsHandling SessionsSpecifying RedirectsEncryptionLimitations🤝Library IntegrationsDynamicPrivyRainbowKitwagmiWeb3-OnboardWeb3-React (V8)🛠Developer PowertoolsPhantom BlocklistSign-In-With (SIW) StandardsSolana Priority FeesSolana Versioned TransactionsWallet Standard✅Best PracticesDisplaying Apps within the Activity TabDisplaying Tokens on SolanaDisplaying Apps within Dialogs🙋ResourcesFAQDemo ApplicationsCommunity Guides & SDKsLogos & AssetsPowered By GitBookLimitationsAndroidAndroid has a 500kb Transaction limit when passing data between services and apps. The requesting app may crash with a TransactionTooLarge exception when requesting a string >500kb (over 31k characters). This tends to happen with significantly large intents.iOSiOS is not known to have a 500kb transaction and allows transmissions up to 1 MB.Phantom Deeplinks - PreviousEncryptionNext - Library IntegrationsDynamicLast modified 1yr agoCopy linkOn this pageAndroidiOS
+
+
+

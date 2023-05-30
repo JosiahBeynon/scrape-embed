@@ -1,0 +1,21 @@
+
+
+
+
+
+
+Demo Applications - Phantom Developer Docs
+
+
+
+
+
+
+
+
+
+
+Phantom Developer DocsHomeDeveloper DiscordChangelogTwitterSearch⌃KLinks👻IntroductionIntroductionDeveloper Settings🟢SolanaGetting Started With SolanaDetecting the ProviderEstablishing a ConnectionSending a Legacy TransactionSending a Versioned TransactionSigning a MessageError Messages and Codes🔷Ethereum & PolygonGetting Started with Ethereum and PolygonDetecting the ProviderEstablishing a ConnectionSending a TransactionSigning a MessageProvider API Reference⛓Phantom DeeplinksPhantom DeeplinksProvider MethodsOther MethodsHandling SessionsSpecifying RedirectsEncryptionLimitations🤝Library IntegrationsDynamicPrivyRainbowKitwagmiWeb3-OnboardWeb3-React (V8)🛠Developer PowertoolsPhantom BlocklistSign-In-With (SIW) StandardsSolana Priority FeesSolana Versioned TransactionsWallet Standard✅Best PracticesDisplaying Apps within the Activity TabDisplaying Tokens on SolanaDisplaying Apps within Dialogs🙋ResourcesFAQDemo ApplicationsCommunity Guides & SDKsLogos & AssetsPowered By GitBookDemo ApplicationsMultichain SandboxFor a live example of how a multichain dApp can integrate with Phantom, check out our Multichain Sandbox on CodeSandbox and GitHub.The Phantom Multichain SandboxSolana-only SandboxFor a live example of a Solana-only integration, check out our Solana Sandbox on CodeSandbox and GitHub.The Phantom SandboxDeeplinking Demo AppFor a live demonstration of Phantom's deeplinking API, please review our React Native demo app on GitHub. This application can be run locally and interacted with on iOS and Android devices via Expo CLI. A connect request to Magic Eden, initiated via a deeplinkResources - PreviousFAQNext - ResourcesCommunity Guides & SDKsLast modified 2mo agoCopy linkOn this pageMultichain SandboxSolana-only SandboxDeeplinking Demo App
+
+
+

@@ -1,0 +1,24 @@
+
+
+
+
+
+
+chainId - Phantom Developer Docs
+
+
+
+
+
+
+
+
+
+
+
+
+
+Phantom Developer DocsHomeDeveloper DiscordChangelogTwitterSearch⌃KLinks👻IntroductionIntroductionDeveloper Settings🟢SolanaGetting Started With SolanaDetecting the ProviderEstablishing a ConnectionSending a Legacy TransactionSending a Versioned TransactionSigning a MessageError Messages and Codes🔷Ethereum & PolygonGetting Started with Ethereum and PolygonDetecting the ProviderEstablishing a ConnectionSending a TransactionSigning a MessageProvider API ReferencePropertiesisPhantomchainIdnetworkVersionselectedAddress_events_eventsCountEventsMethodsError Messages & Codes⛓Phantom DeeplinksPhantom DeeplinksProvider MethodsOther MethodsHandling SessionsSpecifying RedirectsEncryptionLimitations🤝Library IntegrationsDynamicPrivyRainbowKitwagmiWeb3-OnboardWeb3-React (V8)🛠Developer PowertoolsPhantom BlocklistSign-In-With (SIW) StandardsSolana Priority FeesSolana Versioned TransactionsWallet Standard✅Best PracticesDisplaying Apps within the Activity TabDisplaying Tokens on SolanaDisplaying Apps within Dialogs🙋ResourcesFAQDemo ApplicationsCommunity Guides & SDKsLogos & AssetsPowered By GitBookchainIdwindow.phantom.ethereum.chainIdThe chainId of the network you are currently connected to, returned as a hexadecimal string.const chainId = window.phantom.ethereum.chainId;console.log(chainId);// "0x1"// hexidecimal representation of Ethereum MainnetPreviousisPhantomNextnetworkVersionLast modified 1mo agoCopy link
+
+
+

@@ -1,0 +1,21 @@
+
+
+
+
+
+
+Encryption - Phantom Developer Docs
+
+
+
+
+
+
+
+
+
+
+Phantom Developer DocsHomeDeveloper DiscordChangelogTwitterSearch⌃KLinks👻IntroductionIntroductionDeveloper Settings🟢SolanaGetting Started With SolanaDetecting the ProviderEstablishing a ConnectionSending a Legacy TransactionSending a Versioned TransactionSigning a MessageError Messages and Codes🔷Ethereum & PolygonGetting Started with Ethereum and PolygonDetecting the ProviderEstablishing a ConnectionSending a TransactionSigning a MessageProvider API Reference⛓Phantom DeeplinksPhantom DeeplinksProvider MethodsOther MethodsHandling SessionsSpecifying RedirectsEncryptionLimitations🤝Library IntegrationsDynamicPrivyRainbowKitwagmiWeb3-OnboardWeb3-React (V8)🛠Developer PowertoolsPhantom BlocklistSign-In-With (SIW) StandardsSolana Priority FeesSolana Versioned TransactionsWallet Standard✅Best PracticesDisplaying Apps within the Activity TabDisplaying Tokens on SolanaDisplaying Apps within Dialogs🙋ResourcesFAQDemo ApplicationsCommunity Guides & SDKsLogos & AssetsPowered By GitBookEncryptionDeeplinks are encrypted using symmetric key encryption generated from a Diffie-Hellman key exchange. While deeplink sessions will be created in plaintext, an encrypted channel will be created to prevent session tokens from getting hijacked.Encryption & Decryption WorkflowPhantom deeplinks are encrypted with the following workflows:Connect1.[dapp]: On the initial connect deeplink, dapps should include a dapp_encryption_public_key query parameter. It's recommended to create a new x25519 keypair for every session started with connect. In all methods, the public key for this keypair is referred to as dapp_encryption_public_key.2.[phantom]: Upon handling a connect deeplink, Phantom will also generate a new x25519 keypair.Phantom will return this public key as phantom_encryption_public_key in the connect response.Phantom will create a secret key using Diffie-Hellman with dapp_encryption_public_key and the private key associated with phantom_encryption_public_key.Phantom will locally store a mapping of dapp_encryption_public_key to shared secrets for use with decryption in subsequent deeplinks.3.[dapp]: Upon receiving the connect response, the dapp should create a shared secret by using Diffie-Hellman with phantom_encryption_public_key and the private key associated with dapp_encryption_public_key. This shared secret should then be used to decrypt the data field in the response. If done correctly, the user's public key will be available to share with the dapp inside the data JSON object.Subsequent Deeplinks1.[dapp]: For any subsequent methods (such as SignAndSendTransaction and SignMessage), dapps should send a dapp_encryption_public_key (the public key side of the shared secret) used with Phantom along with an encrypted payload object. 2.[phantom]: Upon approval, Phantom will encrypt the signed response as a JSON object with the encryption sent as a data= query param.3.[dapp]: Upon receiving the deeplink response, dapps should decrypt the object in the data= query param to view the signature.Encryption ResourcesTo learn more about encryption and decryption, please refer to the following libraries:JavaScript​TweetNaCl.js​iOS​TweetNaCl SwiftWrap​Android​Tink​​TweetNaCl Java​Phantom Deeplinks - PreviousSpecifying RedirectsNext - Phantom DeeplinksLimitationsLast modified 1yr agoCopy linkOn this pageEncryption & Decryption WorkflowEncryption Resources
+
+
+

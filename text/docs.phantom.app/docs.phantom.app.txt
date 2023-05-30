@@ -1,0 +1,21 @@
+
+
+
+
+
+
+Introduction - Phantom Developer Docs
+
+
+
+
+
+
+
+
+
+
+Phantom Developer DocsHomeDeveloper DiscordChangelogTwitterSearch⌃KLinks👻IntroductionIntroductionDeveloper Settings🟢SolanaGetting Started With SolanaDetecting the ProviderEstablishing a ConnectionSending a Legacy TransactionSending a Versioned TransactionSigning a MessageError Messages and Codes🔷Ethereum & PolygonGetting Started with Ethereum and PolygonDetecting the ProviderEstablishing a ConnectionSending a TransactionSigning a MessageProvider API Reference⛓Phantom DeeplinksPhantom DeeplinksProvider MethodsOther MethodsHandling SessionsSpecifying RedirectsEncryptionLimitations🤝Library IntegrationsDynamicPrivyRainbowKitwagmiWeb3-OnboardWeb3-React (V8)🛠Developer PowertoolsPhantom BlocklistSign-In-With (SIW) StandardsSolana Priority FeesSolana Versioned TransactionsWallet Standard✅Best PracticesDisplaying Apps within the Activity TabDisplaying Tokens on SolanaDisplaying Apps within Dialogs🙋ResourcesFAQDemo ApplicationsCommunity Guides & SDKsLogos & AssetsPowered By GitBookIntroductionPhantom is a crypto wallet that can be used to manage digital assets and access decentralized applications on Solana, Polygon, and Ethereum. Phantom is currently available as:A browser extension​An iOS app​An Android app​At its core, Phantom works by creating and managing private keys on behalf of its users. These keys can then be used within Phantom to store funds and sign transactions. Developers can interact with Phantom via both web applications as well as iOS and Android applications.To interact with web applications, the Phantom extension and mobile in-app browser injects a phantom object into the javascript context of every site the user visits. A given web app may then interact with Phantom, and ask for the user's permission to perform transactions, through this injected provider.It's also possible to interact with the Phantom mobile app through universal links and deeplinks. With deeplinks, mobile apps can prompt their users to connect, sign, and send with Phantom directly. Once complete, Phantom will redirect users back to their referring applications.This documentation is intended for developers who are building applications with Phantom. If you are a developer looking for help with an integration, please check out our developer discord. For all other support requests, please visit our Help Center.​Next - IntroductionDeveloper SettingsLast modified 2mo agoCopy link
+
+
+
