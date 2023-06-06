@@ -13,7 +13,6 @@ import os
 import numpy as np
 from openai.embeddings_utils import distances_from_embeddings
 import sklearn
-# import matplotlib.pyplot as plt
 
 openai.api_key = os.environ['OPENAI_API_KEY']
 
@@ -21,8 +20,8 @@ openai.api_key = os.environ['OPENAI_API_KEY']
 HTTP_URL_PATTERN = r'^http[s]*://.+'
 
 # Define root domain to crawl
-domain = "docs.phantom.app"
-full_url = "https://docs.phantom.app/introduction/developer-settings"
+domain = "developer.mozilla.org"
+full_url = "https://developer.mozilla.org/en-US/docs/Web/API"
 headers = {
   "User-Agent":
   "Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
@@ -52,7 +51,7 @@ def get_hyperlinks(url):
   # Try to open the URL and read the HTML
   try:
     # Open the URL and read the HTML
-    page = urllib.request.Request(url, headers=headers)
+    page = urllib.request.Request(url)
     response = urllib.request.urlopen(page)
 
     # If the response is not HTML, return an empty list
@@ -160,7 +159,7 @@ def crawl(url):
         seen.add(link)
 
 
-# crawl(full_url)
+crawl(full_url)
 
 
 def remove_newlines(serie):
@@ -249,16 +248,3 @@ def answer_question(
   except Exception as e:
     print(e)
     return ""
-
-
-answer = answer_question(
-  df, question="How can I send a request to connect to a dapp on polygon?")
-
-print(answer)
-
-answer1 = answer_question(
-  df,
-  question=
-  "How can I make sure that my pNFT metadata shows up in Phantom correctly?")
-
-print(answer1)
